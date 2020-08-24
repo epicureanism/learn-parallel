@@ -3,9 +3,10 @@
 # .Net Core DI
 
 - Service lifetimes
+
 Services can be registered with one of the following lifetimes:
 
-- Transient
+  - Transient
   
 Transient lifetime services are created each time they're requested from the service container. This lifetime works best for lightweight, stateless services. Register transient services with AddTransient.
 
