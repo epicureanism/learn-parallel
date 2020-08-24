@@ -2,17 +2,17 @@
 
 # .Net Core DI
 
-- Service lifetimes
+## Service lifetimes
 
 Services can be registered with one of the following lifetimes:
 
-  - Transient
+### Transient
   
 Transient lifetime services are created each time they're requested from the service container. This lifetime works best for lightweight, stateless services. Register transient services with AddTransient.
 
 In apps that process requests, transient services are disposed at the end of the request.
 
-  - Scoped
+### Scoped
   
 Scoped lifetime services are created once per client request (connection). Register scoped services with AddScoped.
 
@@ -25,7 +25,7 @@ Do not resolve a scoped service from a singleton. It may cause the service to ha
 Resolve a singleton service from a scoped or transient service.
 Resolve a scoped service from another scoped or transient service.
 
-  - Singleton
+### Singleton
   
 Singleton lifetime services are created either:
 
